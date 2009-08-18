@@ -1,0 +1,63 @@
+\documentclass[12pt,letterpaper]{moderncv}
+\moderncvtheme[12pt,grey,roman]{wbres}
+\usepackage{microtype}
+
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
+
+%% Substitute your favorite serif and sans fonts here; we default to 
+%% TeX Gyre Pagella (free and like Palatino) if you have it installed 
+\IfFileExists{tgpagella.sty}{%
+\usepackage{tgpagella}%
+}{}
+
+%% If you have Minion and Myriad fonts installed for LaTeX (not free,  
+%% require otfinst); we'll prefer these to Pagella and CM Sans
+\IfFileExists{minion.sty}{%
+%\usepackage{minion}
+}{}
+\IfFileExists{myriad.sty}{%
+%\usepackage[sf]{myriad}
+}{}
+
+\usepackage{amssymb}
+%% Create a sans-serif URL style 
+\makeatletter
+\def\url@wbstyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\sffamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{wb}
+
+\firstname{Guilherme}
+\familyname{Bistecca}
+\address{123 Main Street}{Anytown, US  56789\\[.2em]\url{http://gbistecca.com}}
+\mobile{(202) 555-1212}
+\phone{(202) 555-1313}
+\email{gb@gbistecca.com}
+\title{~}
+
+\begin{document}
+		\frenchspacing
+		\maketitle
+	\section{Education}
+		\cventry{2012}{D.Phil.  (procrastination studies, expected 2012)}{University of Topia}{}{}{Dissertation title:  ``Distributed scheduling with hyperoptimized work postponement,'' advised by A.C.~Demia.}
+		\cventry{2001}{MS (procrastination studies)}{University of Topia}{}{}{}
+		\cventry{2000}{BA \emph{cum laude} (applied philosophy, abstract engineering)}{Snute College}{}{}{}
+	
+	\section{Skills}
+		\cvline{}{Excellent oral and written communication skills.  Experienced copyeditor.}
+		\cvline{Software}{Adobe InDesign, Microsoft Word, \LaTeX{}, emacs.}
+		\cvline{Languages}{English (native speaker), Italian (fluent), Basque, Tibetan (conversational), Breton, Georgian.}		
+
+	\section{Experience}
+		\cventry{2007 -- present}{Chief Copyeditor}{Arbitrary Haus}{}{}{Supervised a team of editors; held ultimate responsiblity for ensuring that the world's bestselling children's books live up to the highest quality standards.}
+		\cventry{2003 -- 2007}{Associate Copyeditor}{Arbitrary Haus}{}{}{Responsible for ensuring that the popular \emph{Unhappy Okapi} series of books met the quality standards that discriminating child readers have come to expect.  Used Adobe InDesign and Microsoft Word.}
+
+	\section{Awards and Honors}
+		\cventry{2008}{Arbitrary Haus Golden Okapi Award}{}{}{}{The Golden Okapi award is widely regarded as the Caldecott Medal for copyeditors of juvenile literature.}
+			
+	\section{Publications}
+		\cvline{2009}{G.~Bistecca. \emph{Why the okapi smiles now:  Tales from the underground of juvenile publishing}.  New York:  Arbitrary Haus.}
+		
+		\vfill
+\end{document}

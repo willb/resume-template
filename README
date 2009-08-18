@@ -1,0 +1,11 @@
+Simple resume template
+
+This is a basic LaTeX resume template using the moderncv 
+documentclass and a tweaked version of the "classic" style.  
+See resume.tex for example usage and modify to suit your needs.
+
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License version 1.3c,
+available at http://www.latex-project.org/lppl/.
+
+Comments or flames to willbenton+latex@gmail.com
